@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+body {
+  font-family: 'Ubuntu', sans-serif;
+}
+
+/* !!!-----------------------------------------NAV -----------------------------------!!! */
+
+.navbar-custom {
+  background-color: #fff;
+  padding: 0;
+}
+
+.navbar-custom .navbar-brand img {
+  height: 100%;
+}
+
+.navbar-custom .navbar-nav .nav-item .nav-link {
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  font-weight: 700;
+  letter-spacing: 0.1rem;
+  color: #212121;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.navbar-nav .nav-item .nav-link span {
+  font-weight: 400;
+  color: #0077be;
+}
+
+/* !!!-----------------------------------------/NAV ---------------------------------!!! */
+
+/* !!!-----------------------------------------HEADER --------------------------------!!! */
+header.masthead {
+  position: relative;
+  overflow: hidden;
+  padding-top: calc(7rem + 72px);
+  padding-bottom: 7rem;
+  background-image: url('../images/narbonne.jpg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: scroll;
+  background-size: cover;
+}
+header.masthead .masthead-content {
+  z-index: 1;
+  position: relative;
+}
+header.masthead .masthead-content .masthead-heading {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 4rem;
+}
+.masthead-heading::after {
+  content: '';
+  display: block;
+  background: #fff;
+  width: 100px;
+  height: 2px;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  margin-bottom: 10%;
+}
+
+header.masthead .masthead-content .masthead-subheading {
+  font-size: 2rem;
+}
+
+@media (min-width: 992px) {
+  header.masthead {
+    padding-top: calc(10rem + 55px);
+    padding-bottom: 10rem;
+  }
+  header.masthead .masthead-content .masthead-heading {
+    font-size: 6rem;
+  }
+  header.masthead .masthead-content .masthead-subheading {
+    font-size: 4rem;
+  }
+}
+/* !!!----------------------------------------- /HEADER ----------------------------------------------!!! */
+
+/* SEPARATOR */
+.separator {
+  height: 3px;
+  width: 80%;
+  border-width: 0;
+  border-radius: 25%;
+  color: gray;
+  background-color: gray;
+  margin: 10%;
+  text-align: center;
+}
+.separator img {
+  position: relative;
+  bottom: 15px;
+}
+
+/* !!!------------------------------------------ /MAIN--------------------------------------------!!! */
+.main {
+  color: #212121;
+}
+
+.line-height-10 li {
+  margin: 5%;
+}
+
+/* -------------------------MAP------------------------*/
+#mapid {
+  height: 80vh;
+  border: #0077be 3px solid;
+}
+/* -------------------------/MAP------------------------*/
+
+/* !!!------------------------------------ /MAIN------------------------------!!! */
+
+@media (min-width: 1200px) {
+  .container,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container-xl {
+    max-width: 1190px;
+  }
+}
+
+/* --------------------------WEATHER------------------ */
+
+.toolTip {
+  position: absolute;
+  opacity: 0;
+  top: 10%;
+  left: 3%;
+  background-color: #131313;
+  border-radius: 5px;
+  font-size: 1.3em;
+  padding: 0.3rem;
+  transition: opacity 0.5s, top 0.5s;
+}
+.weatherGlobalLocation:hover .toolTip {
+  opacity: 1;
+  top: 0;
+}
+
+#cardDetail {
+  background: url('../images/narbonnemeteo.jpg') no-repeat center;
+  background-size: cover;
+}
+
+#cardDetail .cardWeatherInfo {
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(9, 9, 121, 1) 35%,
+    rgba(0, 212, 255, 0.5) 100%
+  );
+  width: 45%;
+  color: #f2f2f2;
+  padding: 1rem;
+}
+
+.card-weather {
+  border: #0077be 3px solid;
+}
+
+.weather-location {
+  font-size: 2rem;
+  padding: 1%;
+}
+
+.weather-location-country {
+  margin-left: 5%;
+  font-size: 1.5em;
+  padding: 1%;
+}
+
+.card-weather .weakly-weather .weakly-weather-item {
+  flex: 0 0 14.28%;
+  padding-top: 0.5rem;
+  text-align: center;
+  border: #0077be solid 2px;
+  background: linear-gradient(rgba(61, 202, 160, 0.5), rgba(7, 223, 71, 0.541));
+}
+
+#curentWeather {
+  display: block;
+  height: 10vh;
+  background-size: contain;
+}
+
+.weather-description {
+  display: inline-flex;
+  justify-content: center;
+  font-weight: 600;
+  font-size: x-large;
+}
+
+.weather-wind {
+  /* margin: 2%; */
+  font-size: 0.3em;
+}
+
+.weekIcons {
+  display: block;
+  height: 10vh;
+  background-size: contain;
+}
+
+@media (max-width: 800px) {
+  #cardDetail .cardWeatherInfo {
+    width: 100%;
+  }
+}
+
+@media (max-width: 580px) {
+  .weakly-weather {
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+}
+
+.weather-date,
+.weather-degre,
+.symbol,
+.weekDay,
+.weekTemp,
+.weather-wind {
+  font-family: 'Ubuntu', sans-serif;
+}
+
+/* --------------------------_/WEATHER_------------------ */
+
+/* --------------------------_FOOTER_------------------ */
+
+footer {
+  background: #131313;
+  margin-top: 20%;
+}
+
+/* --------------------------_/FOOTER_------------------ */

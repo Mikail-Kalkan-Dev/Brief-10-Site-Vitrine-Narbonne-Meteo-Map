@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta
+      name="description"
+      content="Interesting Places in Narbonne Map  and Narbonne Weather forecast"
+    />
+    <meta name="author" content="Mikail Web Developer" />
+
+    <title>Narbonne Interesting places</title>
+
+    <!-- Bootstrap core CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+      integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
+      crossorigin="anonymous"
+    />
+
+    <!-- Leaflet Plugin api  -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+      integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+      crossorigin=""
+    />
+
+    <!-- Custom styles -->
+    <link href="assets/css/style.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light navbar-custom fixed-top">
+      <div class="container">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarResponsive1"
+          aria-controls="navbarResponsive1"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive1">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#"><span>AU </span>QUOTIDIEN</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"
+                ><span>DÉMARCHES</span> & TÉLÉSERVICES</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"
+                ><span>SORTIES</span> & DÉCOUVERTES</a
+              >
+            </li>
+          </ul>
+        </div>
+        <a class="navbar-brand" href="#">
+          <img src="assets/images/logo.png" alt="logo narbonne" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarResponsive2"
+          aria-controls="navbarResponsive2"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive2">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#"><span>LA </span>MUNICIPALITÉ</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"
+                ><span>PARTICIPATION</span> CITOYENNE</a
+              >
+            </li>
+            <li class="nav-item">
+              <a href="tel:+0800151311" class="btn btn-success"
+                >Allo Narbonne 0800151311</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <header class="masthead text-center text-white">
+      <div class="masthead-content">
+        <div class="container">
+          <h1 class="masthead-heading mb-0">Au cœur des possibles</h1>
+
+          <input
+            class="form-control mr-sm-2"
+            type="search"
+            placeholder="Search"
+            aria-label="Search"
+          />
+        </div>
+      </div>
+    </header>
+
+    <!-- --------------------------------------------_Section Info_------------------------------------------  -->
+
+    <section>
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-6">
+            <div class="p-5">
+              <img
+                class="img-fluid rounded-circle"
+                src="assets/images/mik2.jpg"
+                alt="images mikail"
+              />
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="p-5">
+              <h2 class="display-4">Mikail Kalkan</h2>
+              <p>
+                Web Developeur de la formation Simplon a Narbonne vous présente
+                si dessou mes activité et lieux préférés à Narbonne.
+              </p>
+              <ol class="line-height-10">
+                <li>
+                  <strong>🍔 Mon best Fast Food KFC 🍔 </strong>Tout simplement
+                  car le poulet est juste à tomber !!
+                </li>
+                <li>
+                  <strong>🏊 La piscine de l'espace Liberté 🏊 </strong>En été
+                  quoi de mieux que de bronze au bord de l'eau!
+                </li>
+                <li>
+                  <strong>🥂 Les soirés sur Le Rive Gauche 🥂 </strong>Une
+                  longue journée? stressé ? prenez des amis et aller boire au
+                  Rive Gauche ambiance assuré.
+                </li>
+                <li>
+                  <strong>
+                    🏞️ Le Jardin des Martyrs de la Résistance 🏞️
+                  </strong>
+                  Besoin d'aire, prendre le temp d'apprécier la nature, je vous
+                  conseil ce jardin avec des jolie parterre floral parfait pour
+                  une pose dans la journée.
+                </li>
+                <li>
+                  <strong> 🛍️ Le magasin H&M 🛍️ </strong> Mon magasin de
+                  prédilection pour tout ce qui est vettement Pour homme pour
+                  femme et enfant vous y trouverai de quoi vous faire plaisir.
+                </li>
+              </ol>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- --------------------------------------------_/Section Info_------------------------------------------  -->
+
+    <!-- --------------------------------------------_Main Container_------------------------------------------  -->
+
+    <div class="container">
+      <!-- --------------------------------------------_SEPARATOR_------------------------------------------  -->
+      <div class="separator">
+        <img src="assets/images/separator.png" alt="separator Map" />
+      </div>
+      <!-- --------------------------------------------_/SEPARATOR_------------------------------------------  -->
+
+      <!-- ----------------------_MAP_---------------------------  -->
+
+      <div id="mapid"></div>
+
+      <!-- ----------------------_/MAP_---------------------------  -->
+
+      <!-- --------------------------------------------_SEPARATOR_------------------------------------------  -->
+      <div class="separator">
+        <img src="assets/images/meteoseparator.png" alt="separator Meteo" />
+      </div>
+      <!-- --------------------------------------------_/SEPARATOR_------------------------------------------  -->
+
+      <!-- ----------------------_Weather_---------------------------  -->
+
+      <!--weather card-->
+      <div class="card card-weather">
+        <div id="cardDetail" class="card-body">
+          <div class="cardWeatherInfo">
+            <div>
+              <div class="weatherGlobalLocation">
+                <span class="weather-location">Narbonne</span>
+                <span class="weather-location-country">FR</span>
+                <span class="toolTip">
+                  Clicker et choissez une Ville et le Pays exemples(fr, us, gb,
+                  es etc..)
+                </span>
+              </div>
+
+              <div>
+                <span class="weather-date">25 March, 2020</span>
+                <select
+                  class="ml-5 text-white bg-dark border-info"
+                  name="lang"
+                  id="lang-select"
+                >
+                  <option value="">-Select Language-</option>
+                  <option value="fr">Français</option>
+                  <option value="en">English</option>
+                  <option value="es">Español</option>
+                  <option value="hi">हिंदी</option>
+                  <option value="ar">عرب</option>
+                  <option value="zh-Hans">中文</option>
+                </select>
+              </div>
+            </div>
+            <div class="d-flex">
+              <div class="m-auto">
+                <div class="row">
+                  <h4 class="display-3">
+                    <span class="weather-degre">10</span>
+                    <span class="symbol">°C</span>
+                    <span class="weather-wind"></span>
+                  </h4>
+                </div>
+                <div>
+                  <span class="weather-description"> Cloudy </span>
+                  <span id="curentWeather"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card-body p-0">
+          <div class="d-flex weakly-weather">
+            <div class="weakly-weather-item">
+              <p class="mb-1 weekDay">Sun</p>
+              <span class="mb-0 weekTemp">30</span>
+              <span class="symbol">°C</span>
+              <div class="weekIcons"></div>
+            </div>
+            <div class="weakly-weather-item">
+              <p class="mb-1 weekDay">Sun</p>
+              <span class="mb-0 weekTemp">30</span>
+              <span class="symbol">°C</span>
+              <div class="weekIcons"></div>
+            </div>
+            <div class="weakly-weather-item">
+              <p class="mb-1 weekDay">Sun</p>
+              <span class="mb-0 weekTemp">30</span>
+              <span class="symbol">°C</span>
+              <div class="weekIcons"></div>
+            </div>
+            <div class="weakly-weather-item">
+              <p class="mb-1 weekDay">Sun</p>
+              <span class="mb-0 weekTemp">30</span>
+              <span class="symbol">°C</span>
+              <div class="weekIcons"></div>
+            </div>
+            <div class="weakly-weather-item">
+              <p class="mb-1 weekDay">Sun</p>
+              <span class="mb-0 weekTemp">30</span>
+              <span class="symbol">°C</span>
+              <div class="weekIcons"></div>
+            </div>
+            <div class="weakly-weather-item">
+              <p class="mb-1 weekDay">Sun</p>
+              <span class="mb-0 weekTemp">30</span>
+              <span class="symbol">°C</span>
+              <div class="weekIcons"></div>
+            </div>
+            <div class="weakly-weather-item">
+              <p class="mb-1 weekDay">Sun</p>
+              <span class="mb-0 weekTemp">30</span>
+              <span class="symbol">°C</span>
+              <div class="weekIcons"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--weather card ends-->
+
+      <!-- ----------------------_/Weather_---------------------------  -->
+    </div>
+
+    <!-- --------------------------------------------_/Main Container_------------------------------------------  -->
+
+    <!-- Footer -->
+    <footer class="py-2">
+      <div class="container">
+        <div class="row row-cols-1 text-center row-cols-sm-2 row-cols-md-5">
+          <a
+            class="text-light col p-2 p-md-0"
+            href="#"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Espace presse</a
+          >
+          <a
+            class="text-light col p-2 p-md-0"
+            href="#"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Espace professionnel</a
+          >
+          <a
+            class="text-light col p-2 p-md-0"
+            href="#"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Espace associations</a
+          >
+          <a
+            class="text-light col p-2 p-md-0"
+            href="#"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Mentions légales</a
+          >
+          <a
+            class="text-light col p-2 p-md-0"
+            href="#"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Plan du site</a
+          >
+        </div>
+        <p class="m-0 text-center small">Copyright &copy; Your Website 2020</p>
+      </div>
+      <!-- /.container -->
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Make sure you put this AFTER Leaflet's CSS -->
+    <script
+      src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+      integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+      crossorigin=""
+    ></script>
+
+    <script src="assets/js/sript.js"></script>
+  </body>
+</html>
